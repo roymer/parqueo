@@ -1,0 +1,8 @@
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\parqueo.exe.config
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\parqueo.exe
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\parqueo.pdb
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csprojAssemblyReference.cache
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Properties.Resources.resources
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.exe
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.pdb
