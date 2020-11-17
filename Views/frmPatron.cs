@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace parqueo
 {
-    public partial class Form1 : Form
+    public partial class frmPatron : Form
     {
-        public Form1()
+        public bool _pushAccept = false;
+
+        public frmPatron()
         {
             InitializeComponent();
+        }
+
+        private void frmPatron_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

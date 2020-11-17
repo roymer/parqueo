@@ -11,3 +11,6 @@ C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.SqlServer
 C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.xml
 C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csproj.CopyComplete
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Views.frmLogin.resources
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.frmPatron.resources
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Views.frmMenu.resources
