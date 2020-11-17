@@ -6,3 +6,8 @@ C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Properties.Resour
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.exe
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.pdb
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.dll
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.xml
+C:\Users\Roymer\source\repos\parqueo\parqueo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csproj.CopyComplete
