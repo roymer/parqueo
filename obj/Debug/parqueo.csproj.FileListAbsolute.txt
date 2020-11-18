@@ -14,3 +14,12 @@ C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.csproj.CopyComple
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Views.frmLogin.resources
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.frmPatron.resources
 C:\Users\Roymer\source\repos\parqueo\parqueo\obj\Debug\parqueo.Views.frmMenu.resources
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.csprojAssemblyReference.cache
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.Properties.Resources.resources
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.Views.frmLogin.resources
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.Views.frmMenu.resources
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.frmPatron.resources
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.csproj.CoreCompileInputs.cache
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.exe
+C:\Users\CINEMA\Documents\parqueo\obj\Debug\parqueo.pdb
