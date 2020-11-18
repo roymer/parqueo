@@ -35,14 +35,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tamanoCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirTamanoCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(85, 303);
+            this.btnCancel.Location = new System.Drawing.Point(160, 346);
             // 
             // panel1
             // 
@@ -52,7 +61,8 @@
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtAccount);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Size = new System.Drawing.Size(321, 355);
+            this.panel1.Location = new System.Drawing.Point(11, 37);
+            this.panel1.Size = new System.Drawing.Size(396, 398);
             this.panel1.Controls.SetChildIndex(this.btnCancel, 0);
             this.panel1.Controls.SetChildIndex(this.btnAccept, 0);
             this.panel1.Controls.SetChildIndex(this.pictureBox1, 0);
@@ -63,7 +73,7 @@
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(205, 303);
+            this.btnAccept.Location = new System.Drawing.Point(280, 346);
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // pictureBox1
@@ -111,20 +121,94 @@
             // 
             this.usersBindingSource.DataSource = typeof(parqueo.Data.Users);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
+            this.verToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(419, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.homeToolStripMenuItem.Text = "Inicio";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tamanoCompletoToolStripMenuItem,
+            this.salirTamanoCompletoToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // tamanoCompletoToolStripMenuItem
+            // 
+            this.tamanoCompletoToolStripMenuItem.Name = "tamanoCompletoToolStripMenuItem";
+            this.tamanoCompletoToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.tamanoCompletoToolStripMenuItem.Text = "Tamaño completo";
+            this.tamanoCompletoToolStripMenuItem.Click += new System.EventHandler(this.tamanoCompletoToolStripMenuItem_Click);
+            // 
+            // salirTamanoCompletoToolStripMenuItem
+            // 
+            this.salirTamanoCompletoToolStripMenuItem.Name = "salirTamanoCompletoToolStripMenuItem";
+            this.salirTamanoCompletoToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.salirTamanoCompletoToolStripMenuItem.Text = "Salir de tamaño completo";
+            this.salirTamanoCompletoToolStripMenuItem.Visible = false;
+            this.salirTamanoCompletoToolStripMenuItem.Click += new System.EventHandler(this.salirTamanoCompletoToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verAyudaToolStripMenuItem,
+            this.versionToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
+            // 
+            // verAyudaToolStripMenuItem
+            // 
+            this.verAyudaToolStripMenuItem.Name = "verAyudaToolStripMenuItem";
+            this.verAyudaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verAyudaToolStripMenuItem.Text = "Ir a ayuda";
+            this.verAyudaToolStripMenuItem.Click += new System.EventHandler(this.verAyudaToolStripMenuItem_Click);
+            // 
+            // versionToolStripMenuItem
+            // 
+            this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versionToolStripMenuItem.Text = "Versión";
+            this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 379);
+            this.ClientSize = new System.Drawing.Size(419, 447);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.Controls.SetChildIndex(this.menuStrip1, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,5 +220,13 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtAccount;
         private System.Windows.Forms.BindingSource usersBindingSource;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tamanoCompletoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verAyudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirTamanoCompletoToolStripMenuItem;
     }
 }
