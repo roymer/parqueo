@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
@@ -42,17 +43,19 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(85, 303);
+            this.btnCancel.Location = new System.Drawing.Point(85, 298);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtAccount);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Size = new System.Drawing.Size(321, 355);
+            this.panel1.Size = new System.Drawing.Size(321, 390);
             this.panel1.Controls.SetChildIndex(this.btnCancel, 0);
             this.panel1.Controls.SetChildIndex(this.btnAccept, 0);
             this.panel1.Controls.SetChildIndex(this.pictureBox1, 0);
@@ -60,10 +63,11 @@
             this.panel1.Controls.SetChildIndex(this.txtPassword, 0);
             this.panel1.Controls.SetChildIndex(this.label1, 0);
             this.panel1.Controls.SetChildIndex(this.label2, 0);
+            this.panel1.Controls.SetChildIndex(this.linkLabel1, 0);
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(205, 303);
+            this.btnAccept.Location = new System.Drawing.Point(205, 298);
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // pictureBox1
@@ -111,11 +115,22 @@
             // 
             this.usersBindingSource.DataSource = typeof(parqueo.Data.Users);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(56, 360);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(108, 19);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Manejar clientes";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 379);
+            this.ClientSize = new System.Drawing.Size(344, 414);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
@@ -136,5 +151,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtAccount;
         private System.Windows.Forms.BindingSource usersBindingSource;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

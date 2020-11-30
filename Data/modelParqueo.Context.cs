@@ -26,5 +26,6 @@ namespace parqueo.Data
         }
     
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Client> Client { get; set; }
     }
 }

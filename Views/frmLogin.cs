@@ -40,5 +40,15 @@ namespace parqueo.Views
                 MessageBox.Show("Usuario no encontrado","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmViewClient vClient = new frmViewClient();
+            vClient.ShowDialog();
+        }
     }
 }
