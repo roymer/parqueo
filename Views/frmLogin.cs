@@ -50,5 +50,11 @@ namespace parqueo.Views
             frmViewClient vClient = new frmViewClient();
             vClient.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmRegVehycule newvehiculo= new frmRegVehycule();
+            newvehiculo.ShowDialog();
+        }
     }
 }

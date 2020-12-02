@@ -52,6 +52,7 @@
         <EntityContainer Name="parqueodbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Users" EntityType="Self.Users" />
           <EntitySet Name="Client" EntityType="parqueodbModel.Client" />
+          <EntitySet Name="VehiculosSet" EntityType="parqueodbModel.Vehiculos" />
         </EntityContainer>
         <EntityType Name="Client">
           <Key>
@@ -66,6 +67,13 @@
           <Property Name="phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ci" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Vehiculos">
+          <Key>
+            <PropertyRef Name="NoVehiculo" />
+          </Key>
+          <Property Name="NoVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Placa" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

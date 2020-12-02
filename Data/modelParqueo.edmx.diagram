@@ -6,7 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="4a5496144c504b4698a5f8c86511dd55" Name="Diagram1">
         <EntityTypeShape EntityType="parqueodbModel.Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="parqueodbModel.Client" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="parqueodbModel.Client" Width="1.5" PointX="3.125" PointY="0.75" />
+        <EntityTypeShape EntityType="parqueodbModel.Vehiculos" Width="1.5" PointX="0.625" PointY="4" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

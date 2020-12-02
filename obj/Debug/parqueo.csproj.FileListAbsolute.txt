@@ -23,3 +23,23 @@ C:\Users\Mau\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
 C:\Users\Mau\parqueo\obj\Debug\parqueo.csproj.CoreCompileInputs.cache
 C:\Users\Mau\parqueo\obj\Debug\parqueo.exe
 C:\Users\Mau\parqueo\obj\Debug\parqueo.pdb
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.csprojAssemblyReference.cache
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Properties.Resources.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Views.frmCreateClient.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Views.frmLogin.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Views.frmMenu.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.frmPatron.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Views.frmViewClient.resources
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.csproj.CoreCompileInputs.cache
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.exe
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.pdb
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\parqueo.exe.config
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\parqueo.exe
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\parqueo.pdb
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\EntityFramework.dll
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\EntityFramework.SqlServer.dll
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\EntityFramework.xml
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\bin\Debug\EntityFramework.SqlServer.xml
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.csproj.CopyComplete
+E:\Mi Carrera\Sistemas\Diseño de Sistemas SIS 3651\parqueo\obj\Debug\parqueo.Views.frmRegVehycule.resources

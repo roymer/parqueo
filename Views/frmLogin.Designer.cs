@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
@@ -43,12 +44,13 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(85, 298);
+            this.btnCancel.Location = new System.Drawing.Point(52, 283);
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -64,10 +66,11 @@
             this.panel1.Controls.SetChildIndex(this.label1, 0);
             this.panel1.Controls.SetChildIndex(this.label2, 0);
             this.panel1.Controls.SetChildIndex(this.linkLabel1, 0);
+            this.panel1.Controls.SetChildIndex(this.button1, 0);
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(205, 298);
+            this.btnAccept.Location = new System.Drawing.Point(185, 283);
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // pictureBox1
@@ -126,6 +129,17 @@
             this.linkLabel1.Text = "Manejar clientes";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(185, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 41);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Adicionar Reporte";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -152,5 +166,6 @@
         private System.Windows.Forms.TextBox txtAccount;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button1;
     }
 }

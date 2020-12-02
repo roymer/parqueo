@@ -12,13 +12,9 @@ namespace parqueo.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class Vehiculos
     {
-        public int id { get; set; }
-        public string account { get; set; }
-        public string password { get; set; }
-        public string name { get; set; }
-        public string lastname { get; set; }
-        public string type { get; set; }
+        public int NoVehiculo { get; set; }
+        public string Placa { get; set; }
     }
 }
