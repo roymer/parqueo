@@ -5,45 +5,121 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="parqueodbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'parqueodb.dbo.boletaPago' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="boletaPago">
+          <Key>
+            <PropertyRef Name="idboletasalida" />
+          </Key>
+          <Property Name="idboletasalida" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="apellido" Type="varchar" MaxLength="50" />
+          <Property Name="ci" Type="varchar" MaxLength="50" />
+          <Property Name="matricula" Type="varchar" MaxLength="50" />
+          <Property Name="horaingreso" Type="varchar" MaxLength="50" />
+          <Property Name="monto" Type="int" />
+        </EntityType>
+        <EntityType Name="boletaPago1">
+          <Key>
+            <PropertyRef Name="matricula" />
+          </Key>
+          <Property Name="matricula" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="nombre" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="apellido" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ci" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="horas" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="pago" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="account" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="password" Type="nchar" MaxLength="100" Nullable="false" />
           <Property Name="name" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="lastname" Type="varchar" MaxLength="30" />
           <Property Name="type" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="local" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityContainer Name="parqueodbModelStoreContainer">
+          <EntitySet Name="boletaPago1" EntityType="Self.boletaPago1" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="boletaPago" EntityType="Self.boletaPago" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [boletaPago].[idboletasalida] AS [idboletasalida], 
+    [boletaPago].[nombre] AS [nombre], 
+    [boletaPago].[apellido] AS [apellido], 
+    [boletaPago].[ci] AS [ci], 
+    [boletaPago].[matricula] AS [matricula], 
+    [boletaPago].[horaingreso] AS [horaingreso], 
+    [boletaPago].[monto] AS [monto]
+    FROM [dbo].[boletaPago] AS [boletaPago]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="parqueodbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="boletaPago1">
+          <Key>
+            <PropertyRef Name="matricula" />
+          </Key>
+          <Property Name="matricula" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="apellido" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ci" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="horas" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="pago" Type="Int32" Nullable="false" />
+        </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="account" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="lastname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="type" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="local" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="parqueodbEntities" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="boletaPago">
+          <Key>
+            <PropertyRef Name="idboletasalida" />
+          </Key>
+          <Property Name="idboletasalida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ci" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="matricula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="horaingreso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="monto" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="parqueodbEntities6" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="boletaPago1" EntityType="Self.boletaPago1" />
           <EntitySet Name="Users" EntityType="Self.Users" />
+          <EntitySet Name="boletaPago" EntityType="Self.boletaPago" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="parqueodbModelStoreContainer" CdmEntityContainer="parqueodbEntities">
+        <EntityContainerMapping StorageEntityContainer="parqueodbModelStoreContainer" CdmEntityContainer="parqueodbEntities6">
+          <EntitySetMapping Name="boletaPago1">
+            <EntityTypeMapping TypeName="parqueodbModel.boletaPago1">
+              <MappingFragment StoreEntitySet="boletaPago1">
+                <ScalarProperty Name="matricula" ColumnName="matricula" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="ci" ColumnName="ci" />
+                <ScalarProperty Name="horas" ColumnName="horas" />
+                <ScalarProperty Name="pago" ColumnName="pago" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="parqueodbModel.Users">
               <MappingFragment StoreEntitySet="Users">
@@ -53,6 +129,20 @@
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="lastname" ColumnName="lastname" />
                 <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="local" ColumnName="local" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="boletaPago">
+            <EntityTypeMapping TypeName="parqueodbModel.boletaPago">
+              <MappingFragment StoreEntitySet="boletaPago">
+                <ScalarProperty Name="idboletasalida" ColumnName="idboletasalida" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="ci" ColumnName="ci" />
+                <ScalarProperty Name="matricula" ColumnName="matricula" />
+                <ScalarProperty Name="horaingreso" ColumnName="horaingreso" />
+                <ScalarProperty Name="monto" ColumnName="monto" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -73,7 +163,7 @@
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

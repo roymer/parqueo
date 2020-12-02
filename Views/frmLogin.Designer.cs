@@ -53,6 +53,7 @@
             this.panel1.Controls.Add(this.txtAccount);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Size = new System.Drawing.Size(321, 355);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.Controls.SetChildIndex(this.btnCancel, 0);
             this.panel1.Controls.SetChildIndex(this.btnAccept, 0);
             this.panel1.Controls.SetChildIndex(this.pictureBox1, 0);
@@ -92,7 +93,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 159);
+            this.label1.Location = new System.Drawing.Point(38, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 19);
             this.label1.TabIndex = 5;
@@ -116,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 379);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);

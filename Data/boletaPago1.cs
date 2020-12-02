@@ -12,14 +12,13 @@ namespace parqueo.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class boletaPago1
     {
-        public int id { get; set; }
-        public string account { get; set; }
-        public string password { get; set; }
-        public string name { get; set; }
-        public string lastname { get; set; }
-        public string type { get; set; }
-        public string local { get; set; }
+        public string matricula { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string ci { get; set; }
+        public string horas { get; set; }
+        public int pago { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace parqueo.Controllers
 {
     class UserControllers
     {
-        parqueodbEntities _db = new parqueodbEntities();
+        parqueodbEntities6 _db = new parqueodbEntities6();
 
         public Users Login(string pAccount, string pPassword)
         {
@@ -21,6 +21,12 @@ namespace parqueo.Controllers
             }
             
             return res;
+        }
+
+        public bool Insert (boletaPago1 boletaPago1)
+        {
+            _db.boletaPago1.Add(boletaPago1);
+            return _db.SaveChanges() > 0;
         }
 
     }

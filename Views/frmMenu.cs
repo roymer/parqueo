@@ -27,5 +27,12 @@ namespace parqueo.Views
         {
 
         }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            boleta frm2 = new boleta();
+
+            frm2.Show();
+        }
     }
 }

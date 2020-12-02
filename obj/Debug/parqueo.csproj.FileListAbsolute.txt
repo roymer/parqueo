@@ -23,3 +23,27 @@ C:\Users\Mau\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
 C:\Users\Mau\parqueo\obj\Debug\parqueo.csproj.CoreCompileInputs.cache
 C:\Users\Mau\parqueo\obj\Debug\parqueo.exe
 C:\Users\Mau\parqueo\obj\Debug\parqueo.pdb
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.csprojAssemblyReference.cache
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.Properties.Resources.resources
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.Views.frmLogin.resources
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.Views.frmMenu.resources
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.frmPatron.resources
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.csproj.GenerateResource.cache
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.csproj.CoreCompileInputs.cache
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.exe
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.pdb
+D:\proyecto dis. sis\parqueo\bin\Debug\parqueo.exe.config
+D:\proyecto dis. sis\parqueo\bin\Debug\parqueo.exe
+D:\proyecto dis. sis\parqueo\bin\Debug\parqueo.pdb
+D:\proyecto dis. sis\parqueo\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\proyecto dis. sis\parqueo\bin\Debug\EntityFramework.dll
+D:\proyecto dis. sis\parqueo\bin\Debug\EntityFramework.SqlServer.dll
+D:\proyecto dis. sis\parqueo\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\proyecto dis. sis\parqueo\bin\Debug\EntityFramework.xml
+D:\proyecto dis. sis\parqueo\bin\Debug\EntityFramework.SqlServer.xml
+D:\proyecto dis. sis\parqueo\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.csproj.CopyComplete
+D:\proyecto dis. sis\parqueo\obj\Debug\parqueo.Views.boleta.resources
+C:\Users\Jhosu3\Desktop\parqueo\bin\Debug\parqueo.exe.config
+C:\Users\Jhosu3\Desktop\parqueo\obj\Debug\parqueo.exe
+C:\Users\Jhosu3\Desktop\parqueo\obj\Debug\parqueo.pdb
